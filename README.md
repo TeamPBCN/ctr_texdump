@@ -3,6 +3,8 @@ Nintendo 3DS texture dumpper.
 
 # Usage
 ```
+texdump -i INPUT -o OUTPUT -f FORMAT -p POSITION -l LENGTH -w WIDTH -h HEIGHT
+
   -i, --input       Required. Set input file.
   -o, --output      Set output file.
   -f, --format      Required. Set pixel format.
