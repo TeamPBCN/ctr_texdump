@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "texdump", "texdump\texdump.csproj", "{5B605926-E4F2-4D53-B0B4-B9CAC411AFE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "texdumpcore", "texdumpcore\texdumpcore.csproj", "{B0696E39-1880-4DBB-BB55-E7FA5C47007B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{5B605926-E4F2-4D53-B0B4-B9CAC411AFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B605926-E4F2-4D53-B0B4-B9CAC411AFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B605926-E4F2-4D53-B0B4-B9CAC411AFE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0696E39-1880-4DBB-BB55-E7FA5C47007B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0696E39-1880-4DBB-BB55-E7FA5C47007B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0696E39-1880-4DBB-BB55-E7FA5C47007B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0696E39-1880-4DBB-BB55-E7FA5C47007B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36EE43E4-677A-4450-A666-2D9D5F9298F8}
 	EndGlobalSection
 EndGlobal

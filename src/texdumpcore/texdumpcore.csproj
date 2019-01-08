@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\texdump\CommandLine\ArgumentParser.cs" Link="CommandLine\ArgumentParser.cs" />
+    <Compile Include="..\texdump\CommandLine\AssemblyLicenseAttribute.cs" Link="CommandLine\AssemblyLicenseAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\AssemblyUsageAttribute.cs" Link="CommandLine\AssemblyUsageAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\Assumes.cs" Link="CommandLine\Assumes.cs" />
+    <Compile Include="..\texdump\CommandLine\BadOptionInfo.cs" Link="CommandLine\BadOptionInfo.cs" />
+    <Compile Include="..\texdump\CommandLine\BaseOptionAttribute.cs" Link="CommandLine\BaseOptionAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\BaseSentenceBuilder.cs" Link="CommandLine\BaseSentenceBuilder.cs" />
+    <Compile Include="..\texdump\CommandLine\CharExtensions.cs" Link="CommandLine\CharExtensions.cs" />
+    <Compile Include="..\texdump\CommandLine\CopyrightInfo.cs" Link="CommandLine\CopyrightInfo.cs" />
+    <Compile Include="..\texdump\CommandLine\EnglishSentenceBuilder.cs" Link="CommandLine\EnglishSentenceBuilder.cs" />
+    <Compile Include="..\texdump\CommandLine\FormatOptionHelpTextEventArgs.cs" Link="CommandLine\FormatOptionHelpTextEventArgs.cs" />
+    <Compile Include="..\texdump\CommandLine\GlobalSuppressions.cs" Link="CommandLine\GlobalSuppressions.cs" />
+    <Compile Include="..\texdump\CommandLine\HeadingInfo.cs" Link="CommandLine\HeadingInfo.cs" />
+    <Compile Include="..\texdump\CommandLine\HelpOptionAttribute.cs" Link="CommandLine\HelpOptionAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\HelpText.cs" Link="CommandLine\HelpText.cs" />
+    <Compile Include="..\texdump\CommandLine\HelpVerbOptionAttribute.cs" Link="CommandLine\HelpVerbOptionAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\IArgumentEnumerator.cs" Link="CommandLine\IArgumentEnumerator.cs" />
+    <Compile Include="..\texdump\CommandLine\IParserState.cs" Link="CommandLine\IParserState.cs" />
+    <Compile Include="..\texdump\CommandLine\LongOptionParser.cs" Link="CommandLine\LongOptionParser.cs" />
+    <Compile Include="..\texdump\CommandLine\MultiLineTextAttribute.cs" Link="CommandLine\MultiLineTextAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\OneCharStringEnumerator.cs" Link="CommandLine\OneCharStringEnumerator.cs" />
+    <Compile Include="..\texdump\CommandLine\OptionArrayAttribute.cs" Link="CommandLine\OptionArrayAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\OptionAttribute.cs" Link="CommandLine\OptionAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\OptionGroupParser.cs" Link="CommandLine\OptionGroupParser.cs" />
+    <Compile Include="..\texdump\CommandLine\OptionInfo.cs" Link="CommandLine\OptionInfo.cs" />
+    <Compile Include="..\texdump\CommandLine\OptionListAttribute.cs" Link="CommandLine\OptionListAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\OptionMap.cs" Link="CommandLine\OptionMap.cs" />
+    <Compile Include="..\texdump\CommandLine\Pair.cs" Link="CommandLine\Pair.cs" />
+    <Compile Include="..\texdump\CommandLine\Parser.cs" Link="CommandLine\Parser.cs" />
+    <Compile Include="..\texdump\CommandLine\ParserException.cs" Link="CommandLine\ParserException.cs" />
+    <Compile Include="..\texdump\CommandLine\ParserSettings.cs" Link="CommandLine\ParserSettings.cs" />
+    <Compile Include="..\texdump\CommandLine\ParserState.cs" Link="CommandLine\ParserState.cs" />
+    <Compile Include="..\texdump\CommandLine\ParserStateAttribute.cs" Link="CommandLine\ParserStateAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\ParsingError.cs" Link="CommandLine\ParsingError.cs" />
+    <Compile Include="..\texdump\CommandLine\PopsicleSetter.cs" Link="CommandLine\PopsicleSetter.cs" />
+    <Compile Include="..\texdump\CommandLine\PresentParserState.cs" Link="CommandLine\PresentParserState.cs" />
+    <Compile Include="..\texdump\CommandLine\PropertyWriter.cs" Link="CommandLine\PropertyWriter.cs" />
+    <Compile Include="..\texdump\CommandLine\ReflectionCache.cs" Link="CommandLine\ReflectionCache.cs" />
+    <Compile Include="..\texdump\CommandLine\ReflectionHelper.cs" Link="CommandLine\ReflectionHelper.cs" />
+    <Compile Include="..\texdump\CommandLine\SR.strings.cs" Link="CommandLine\SR.strings.cs" />
+    <Compile Include="..\texdump\CommandLine\StringArrayEnumerator.cs" Link="CommandLine\StringArrayEnumerator.cs" />
+    <Compile Include="..\texdump\CommandLine\StringExtensions.cs" Link="CommandLine\StringExtensions.cs" />
+    <Compile Include="..\texdump\CommandLine\TargetCapabilitiesExtensions.cs" Link="CommandLine\TargetCapabilitiesExtensions.cs" />
+    <Compile Include="..\texdump\CommandLine\ValueListAttribute.cs" Link="CommandLine\ValueListAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\ValueMapper.cs" Link="CommandLine\ValueMapper.cs" />
+    <Compile Include="..\texdump\CommandLine\ValueOptionAttribute.cs" Link="CommandLine\ValueOptionAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\VerbOptionAttribute.cs" Link="CommandLine\VerbOptionAttribute.cs" />
+    <Compile Include="..\texdump\CommandLine\_ParsingErrorsHandler.cs" Link="CommandLine\_ParsingErrorsHandler.cs" />
+    <Compile Include="..\texdump\CTR_Textures.cs" Link="CTR_Textures.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-beta006" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CommandLine\" />
+  </ItemGroup>
+
+</Project>
