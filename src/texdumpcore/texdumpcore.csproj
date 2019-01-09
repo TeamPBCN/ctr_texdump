@@ -56,11 +56,10 @@
     <Compile Include="..\texdump\CommandLine\ValueOptionAttribute.cs" Link="CommandLine\ValueOptionAttribute.cs" />
     <Compile Include="..\texdump\CommandLine\VerbOptionAttribute.cs" Link="CommandLine\VerbOptionAttribute.cs" />
     <Compile Include="..\texdump\CommandLine\_ParsingErrorsHandler.cs" Link="CommandLine\_ParsingErrorsHandler.cs" />
-    <Compile Include="..\texdump\CTR_Textures.cs" Link="CTR_Textures.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-beta006" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0005" />
   </ItemGroup>
 
   <ItemGroup>

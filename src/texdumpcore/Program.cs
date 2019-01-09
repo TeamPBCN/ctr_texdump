@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Drawing;
 using System.IO;
 
 using CommandLine;
 using CommandLine.Text;
 using CTR;
+
+using SixLabors.ImageSharp;
 
 namespace texdump
 {
@@ -32,7 +33,7 @@ namespace texdump
             fs.Position = options.Position;
             texture.ImageData = reader.ReadBytes(options.Length);
 
-            Bitmap bmp = TextureUtil.DecodeTexture(texture);
+            var bmp = TextureUtil.DecodeTexture(texture);
 
             if (!string.IsNullOrEmpty(options.Output))
                 bmp.Save(options.Output);
