@@ -12,7 +12,6 @@ texdump -i INPUT -o OUTPUT -f FORMAT -p POSITION -l LENGTH -w WIDTH -h HEIGHT
   -l, --length      Set texture data length.
   -w, --width       set image width.
   -h, --height      Set image height.
-  --help            Display this help screen.
 ```
 
 # Credit
