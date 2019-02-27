@@ -31,7 +31,15 @@ namespace texdump
             var fs = File.OpenRead(options.Input);
             BinaryReader reader = new BinaryReader(fs);
             fs.Position = options.Position;
-            texture.ImageData = reader.ReadBytes(options.Length);
+            if (options.Length > 0)
+            {
+                texture.ImageData = reader.ReadBytes(options.Length);
+            }
+            else
+            {
+                var length = (int)(options.Width * options.Height * TextureUtil.GetBytesPerPixel(options.Format));
+                texture.ImageData = reader.ReadBytes(length);
+            }
 
             var bmp = TextureUtil.DecodeTexture(texture);
 

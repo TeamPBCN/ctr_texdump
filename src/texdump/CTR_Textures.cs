@@ -420,7 +420,7 @@ namespace CTR
             return (int)((((x / 8) + (y / 8) * ((size.Width % 8 == 0 ? size.Width : size.Width + 8 - (size.Width % 8)) / 8))) * 64.0 * bytesPerPixel);
         }
 
-        private static float GetBytesPerPixel(TextureFormat format)
+        public static float GetBytesPerPixel(TextureFormat format)
         {
             switch (format)
             {

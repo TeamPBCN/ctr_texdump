@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using CommandLine;
+﻿using CommandLine;
 using CommandLine.Text;
-using System.Drawing;
 using CTR;
+using System;
+using System.Drawing;
+using System.IO;
 
 namespace texdump
 {
@@ -34,7 +29,15 @@ namespace texdump
             var fs = File.OpenRead(options.Input);
             BinaryReader reader = new BinaryReader(fs);
             fs.Position = options.Position;
-            texture.ImageData = reader.ReadBytes(options.Length);
+            if (options.Length > 0)
+            {
+                texture.ImageData = reader.ReadBytes(options.Length);
+            }
+            else
+            {
+                var length = (int)(options.Width * options.Height * TextureUtil.GetBytesPerPixel(options.Format));
+                texture.ImageData = reader.ReadBytes(length);
+            }
 
             Bitmap bmp = TextureUtil.DecodeTexture(texture);
 
